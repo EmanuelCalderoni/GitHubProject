@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var boton: UIButton!
+    @IBAction func botonClickeado(_ sender: Any) {
+        print("boton clickeado")
+        boton.backgroundColor = UIColor.green
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
